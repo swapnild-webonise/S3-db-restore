@@ -1,0 +1,20 @@
+<VirtualHost *:80>
+  ServerName <%= @server_name %>
+  DocumentRoot <%= @doc_root %>
+
+#  rails_env development
+
+  <Directory <%= @doc_root %>>
+    Options FollowSymLinks
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+#    Header set Access-Control-Allow-Origin: *
+#    Header set Access-Control-Allow-Methods "POST" 
+#    Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept"
+  </Directory>
+
+  LogLevel info
+  ErrorLog /var/log/apache2/<%= @server_name %>-error.log
+  CustomLog /var/log/apache2/<%= @server_name %>-access.log combined
+</VirtualHost>

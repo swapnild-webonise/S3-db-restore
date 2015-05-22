@@ -1,0 +1,1 @@
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/webonise/vm/db","disabled":false},"v-csc-1":{"id":"v-csc-1","guestpath":"/tmp/vagrant-chef/8ce328f81f9d9076db29e19b6e4f48ea/cookbooks","hostpath":"/home/webonise/vm/db/cookbook","disabled":false}}}
